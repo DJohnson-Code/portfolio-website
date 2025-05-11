@@ -1,16 +1,16 @@
-# 🧑‍💻 Personal Portfolio Website
+# Personal Portfolio Website
 
 Welcome to my personal portfolio website, built to showcase my projects and experience as a software developer and digital creator.
 
 ---
 
-## 🌐 Live Preview
+## Live Preview
 
 Currently, the site is only available locally for development; it is very bare bones. Deployment will be available in the future.
 
 ---
 
-## ✨ Features
+## Features
 
 - Dark-themed splash screen  
 - Animated typing introduction with blinking cursor  
@@ -19,7 +19,7 @@ Currently, the site is only available locally for development; it is very bare b
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - HTML5  
 - CSS3 (with custom animations)  
@@ -27,7 +27,7 @@ Currently, the site is only available locally for development; it is very bare b
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 To view the project locally:
 
@@ -41,7 +41,7 @@ cd portfolio-website
 # Open index.html in your browser
 ```
 
-## ✅ TODOs
+## TODOs
 Make the site fully responsive across devices
 
 Add project showcase section
