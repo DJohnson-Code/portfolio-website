@@ -1,0 +1,109 @@
+/* Sets a dark theme with a centered, full-screen background image */
+
+body {
+  background-color: black;
+  color: white;
+  background: url("images/wp6475781.webp") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Centers the header text */
+
+header {
+  text-align: center;
+}
+
+/* Sections take up full screen height with internal spacing */
+
+section {
+  min-height: 100vh;
+  padding: 2em;
+}
+
+/* For the initial load-screen
+position keeps the load-screen fixed in place while the page loads even if user scrolls
+the load-screen will be fixed in place until the page is fully loaded 
+top/left 0 ensures it starts at the top left corner of the screen
+width/height 100% ensures it covers the entire screen
+*/
+
+#splash-screen {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: center;
+  animation: tvOn 0.6s ease-out forwards;
+  text-align: center;
+}
+
+#name {
+  font-family: "Chathura", sans-serif;
+  font-size: 4rem;
+  font-weight: 100;
+  margin: 0.25rem 0;
+}
+
+#title {
+  font-family: "Chathura", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 100;
+  text-align: center;
+  display: inline-block;
+}
+
+#splash-screen.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#main-content {
+  display: none;
+  visibility: hidden;
+  padding: 2em;
+}
+
+.typing::after {
+  content: "|";
+  margin-left: 0rem;
+  animation: blink 1s step-end infinite;
+}
+  
+.fade-out {
+  animation: fadeOut 1s ease-in forwards;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes tvOn {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scaleY(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+}
