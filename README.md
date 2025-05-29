@@ -1,4 +1,4 @@
-# Personal Portfolio Website
+# Personal Portfolio Website (Work in progress, on hold)
 
 Welcome to my personal portfolio website, built to showcase my projects and experience as a software developer and digital creator.
 
